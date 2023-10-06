@@ -8,14 +8,12 @@ z-index: 3;
 `
 type ShowImgProps = {
   id: string,
-  isRevers?: boolean,
 }
-const ShowImage:NextPage<ShowImgProps> = ({id, isRevers, }) => {
+const ShowImage:NextPage<ShowImgProps> = ({id, }) => {
   return (
-    <OverLab id="img" className='w-full'>
-    <div className={`container mx-auto  grid grid-cols-2 ${isRevers ?? 'py-5'}`}>
-    
-      <img id={id} alt="my picture eiei"  className={`${isRevers ? 'col-start-2 ' : ' w-9/12'}`} />
+    <OverLab id="img" className='w-full ' >
+    <div className={`container mx-auto lg:pt-10 md:pt-[93px]  grid md:grid-cols-2  sm:grid-cols-1   place-content-center md:place-content-start sm:place-content-center `}>
+      <img id={id} alt="my picture eiei"  className={`md:w-[82%]  sm:w-2/4'}`} />
     </div>
   </OverLab>
   );

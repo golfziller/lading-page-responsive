@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {   
-  #main-img{
-    background-image: url(http://subtlepatterns.com/patterns/dark_embroidery.png);
+  #football-img{
+    content: url('/image/graphic-mobile.png');
   } 
 }
 
@@ -13,6 +13,12 @@
     #football-img{        
         content: url('/image/graphic-desktop-1.png');
     } 
+}
+
+@media screen and (max-width: 767px) {   
+  #basketball-img{
+    content: url('/image/graphic-mobile-1.png');
+  } 
 }
 @media screen and (min-width: 768px) {   
   #basketball-img{      
