@@ -1,0 +1,26 @@
+@media screen and (max-width: 767px) {   
+  #main-img{
+    background-image: url(http://subtlepatterns.com/patterns/dark_embroidery.png);
+  } 
+}
+
+@media screen and (min-width: 768px) {    
+  #football-img{      
+    content: url('/image/graphic-tablet.png');
+  } 
+} 
+@media (min-width: 1024px) {      
+    #football-img{        
+        content: url('/image/graphic-desktop-1.png');
+    } 
+}
+@media screen and (min-width: 768px) {   
+  #basketball-img{      
+    content: url('/image/graphic-tablet-1.png');
+  } 
+} 
+@media (min-width: 1024px) {      
+    #basketball-img{        
+        content: url('/image/graphic-desktop.png');
+    } 
+}
