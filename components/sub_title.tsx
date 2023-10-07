@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import styled from 'styled-components';
+
 const SubTitle = styled.span`
 font-size: 36px;
 font-weight: 400;

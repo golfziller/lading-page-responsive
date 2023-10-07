@@ -17,26 +17,25 @@ type SlideProps = {
 }
 const Slide:NextPage<SlideProps> =({renderFootball}) => {
   return (
-   
       <Swiper
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
+        
         modules={[Pagination]}
         className="md:!hidden"
       >
         {
           dataPage[renderFootball?'football': 'basketball'].map((item, index) => {
             return  <SwiperSlide key={index}>
-              <div className='pt-[80px] px-5'>
+              <div className='pt-[80px] px-5 '>
                 <SubTitleAndNumberProps number={item.number} subTitle={item.subTitle} classNameDivSubTitle='pb-5'></SubTitleAndNumberProps>
                 <span  className='text-desc'>{item.desc}</span>
               </div>
             </SwiperSlide>
           })
         }
-      
       </Swiper>
  
   );

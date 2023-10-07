@@ -1,13 +1,13 @@
 import Step from '@/components/step';
 import { NextPage } from 'next'
-import ShowImage from '@/components/show_image';
 import ShowBasketballImage from '@/components/show_basketball';
 import { dataPage } from '@/constants';
 import CarouselInfo from '@/components/carousel';
+import ShowFootball from '@/components/show_football';
 const Main: NextPage =() => {
   return (
     <div>
-      <ShowImage id="football-img"></ShowImage>
+      <ShowFootball id="football-img"></ShowFootball>
       <div>
         <Step
           title={dataPage.football[0].title} 
@@ -75,6 +75,7 @@ const Main: NextPage =() => {
         numberClass='text-purple-03' 
         bgClass='bg-dark-blue'
         colorUnderlineClass='bg-white' 
+        classNameDivContent="!basis-full"
         descriptionClass='text-white md:pb-8 lg:pb-0'></Step> 
    </div>
   )
