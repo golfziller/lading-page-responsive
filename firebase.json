@@ -1,13 +1,13 @@
 {
   "hosting": {
-    "public": "public",
-    "cleanUrls": true,
+    "redirects": [],
     "rewrites": [
       {
         "source": "**",
-        "function": "nextjs-server"
+        "function": "nextApp"
       }
     ],
+    "cleanUrls": true,
     "ignore": [
       "firebase.json",
       "**/.*",
