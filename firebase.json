@@ -1,6 +1,13 @@
 {
   "hosting": {
-    "public": "./next",
+    "public": "public",
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "nextjs-server"
+      }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",
