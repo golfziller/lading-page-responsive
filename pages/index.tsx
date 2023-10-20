@@ -1,19 +1,20 @@
 import Step from '@/components/step';
-import { NextPage } from 'next'
+import { GetServerSideProps, NextPage } from 'next'
 import ShowBasketballImage from '@/components/show_basketball';
 import { dataPage } from '@/constants';
 import CarouselInfo from '@/components/carousel';
 import ShowFootball from '@/components/show_football';
-const Main: NextPage =() => {
+const Main: NextPage<{name: string}> =({name}) => {
   return (
     <div>
       <ShowFootball id="football-img"></ShowFootball>
       <div>
         <Step
-          title={dataPage.football[0].title} 
+          title={name ??dataPage.football[0].title} 
           number={dataPage.football[0].number} 
           subTitle={dataPage.football[0].subTitle} 
           detail={dataPage.football[0].desc}
+          classNameDivContent='md:pb-6 pt-3'
           classNameDivSubTitle='lg:mb-6 md:mb-4 hidden md:block'
           classNameParent='md:pt-[60px] lg:pt-3 md:pl-10 md:pr-10  lg:pl-0 lg:pr-0' 
           descriptionClass='lg:pb-8 md:pb-0'></Step>
@@ -49,9 +50,9 @@ const Main: NextPage =() => {
         subTitle={dataPage.basketball[0].subTitle}
         detail={dataPage.basketball[0].desc}
         classNameDivSubTitle='lg:mb-6 md:mb-4 hidden md:block md:pb-1 lg:pb-0'
-        classNameDivContent="lg:basis-[45%]"
+        classNameDivContent="lg:basis-[50%] lg:pb-6 md:pb-0 pt-3"
         classNameParent='md:pl-6 lg:pl-0 md:pt-[55px] lg:pt-0'
-        descriptionClass='pb-5'></Step>
+        descriptionClass='lg:pb-5 md:pb-3'></Step>
 
       <Step 
         number={dataPage.basketball[1].number} 
@@ -59,7 +60,7 @@ const Main: NextPage =() => {
         detail={dataPage.basketball[1].desc}
         classNameDivSubTitle='lg:mb-6 md:mb-4 hidden md:block'
         classNameParent='md:pl-6 lg:pl-0' 
-        classNameDivContent='md:pt-10 ' 
+        classNameDivContent='!lg:pt-10 md:pt-[65px] md:pb-[30px] ' 
         isReverse  
         descriptionClass=' pb-8 ' 
         bgClass='bg-white-smoke'>
@@ -80,6 +81,17 @@ const Main: NextPage =() => {
    </div>
   )
 }
+// export const getServerSideProps: GetServerSideProps<{ name: String }> = async () => {
+ 
+//   const res = await fetch('https://randomuser.me/api/')
+//   var data = await res.json();
+//   const getName = data['results'][0]['name'];
+//   const fullName = getName['title'] + ' ' + getName['first']+ ' ' + getName['last']
+ 
+//   return {
+//     props: { name:fullName }
+//   }
+// }
 
  
 export default Main

@@ -9,13 +9,13 @@ const dataPage = {
     {
       number: '02',
       subTitle: 'COLLABORATION',
-      desc: 'Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.'
+      desc: 'Work with other student athletes to increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.'
     },
   
     {
       number: '03',
       subTitle: 'GROWTH',
-      desc: 'Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc.'
+      desc: 'Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc'
     }
   ],
   basketball: [
@@ -28,7 +28,7 @@ const dataPage = {
     {
     number: '02',
     subTitle: 'COLLABORATION',
-    desc: 'Work with recruiter to increase your chances of finding talented athlete.'
+    desc: 'Work with recruiter to increase your chances of findingtalented athlete.'
     },
     {
     number: '03',

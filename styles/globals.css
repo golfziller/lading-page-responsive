@@ -23,20 +23,51 @@
   text-align: left;
   
 }
+.sub-title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 1.5px;
+  text-align: left;
+}
+.number {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+}
 @media screen and (min-width: 768px) { 
+ 
   .text-desc {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 767px) { 
+  .sub-title {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33px;
+    
+  }
   .text-desc {
     font-size: 15px;
+    line-height: 18px;
+  }
+  .number {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1.5px;
   }
 }
 .swiper-pagination-bullet-active {
   @apply bg-purple-01 !important
 }
 .swiper-pagination-bullet {
-  width: 13px  !important;
-  height: 13px  !important;
+  width: 10px  !important;
+  height: 10px  !important;
+  margin: 0 6px !important;
+}
+.swiper-pagination {
+  margin-bottom: 10px !important;
 }

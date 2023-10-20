@@ -1,17 +1,19 @@
 {
   "hosting": {
-    "redirects": [],
+    "public": "out", 
     "rewrites": [
       {
         "source": "**",
-        "function": "nextApp"
+        "function": "nextjs-server"
       }
     ],
-    "cleanUrls": true,
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "cleanUrls": true
+    
+  },
+  "functions": {
+    "source": ".",
+    "runtime": "nodejs16"
   }
+
 }
