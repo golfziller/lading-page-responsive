@@ -1,5 +1,5 @@
 import Step from '@/components/step';
-import { GetServerSideProps, NextPage } from 'next'
+import { NextPage } from 'next'
 import ShowBasketballImage from '@/components/show_basketball';
 import { dataPage } from '@/constants';
 import CarouselInfo from '@/components/carousel';
@@ -81,17 +81,6 @@ const Main: NextPage<{name: string}> =({name}) => {
    </div>
   )
 }
-// export const getServerSideProps: GetServerSideProps<{ name: String }> = async () => {
- 
-//   const res = await fetch('https://randomuser.me/api/')
-//   var data = await res.json();
-//   const getName = data['results'][0]['name'];
-//   const fullName = getName['title'] + ' ' + getName['first']+ ' ' + getName['last']
- 
-//   return {
-//     props: { name:fullName }
-//   }
-// }
 
  
 export default Main
