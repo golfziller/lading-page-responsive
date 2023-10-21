@@ -14,7 +14,7 @@ const ShowFootball:NextPage<ShowImgProps> = ({id, }) => {
     <OverLab  className='w-full' >
     <div className={`lg:container mx-auto lg:pt-10 md:pt-[93px] pt-[75px]  flex flex-row justify-center md:justify-start `}>
       <div className="md:basis-1/2  ">
-        <img id={id} alt="my picture eiei"  className={`xl:w-[83%] lg:w-full md:w-[83%]  '}`} />
+        <img id={id} alt="my picture eiei"  className={`xl:w-[83%] lg:w-full md:w-[315px]  '}`} />
       </div>
     </div>
   </OverLab>

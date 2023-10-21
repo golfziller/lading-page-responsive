@@ -28,7 +28,7 @@ const dataPage = {
     {
     number: '02',
     subTitle: 'COLLABORATION',
-    desc: 'Work with recruiter to increase your chances of findingtalented athlete.'
+    desc: 'Work with recruiter to increase your chances of finding talented athlete.'
     },
     {
     number: '03',

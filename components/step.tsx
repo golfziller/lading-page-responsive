@@ -22,9 +22,9 @@ type StepProps = {
 const Step: NextPage<StepProps> = ({ children, classNameDivContent, classNameDivSubTitle, classNameParent, title, number, subTitle, detail, bgClass, descriptionClass, colorUnderlineClass, isReverse, numberClass })=> {
   return (
   <div className={`${ bgClass ?? 'bg-white'} ${classNameParent ?? ''}   `}>
-    <div className={`container mx-auto flex ${isReverse ? '': 'md:flex-row-reverse'} container-step`} >
+    <div className={`xl:container mx-auto flex ${isReverse ? '': 'md:flex-row-reverse'} container-step`} >
      
-      <div className={` lg:basis-1/2  ${isReverse? 'md:basis-[57%]' : 'md:basis-[65%]'} ${isReverse ?' xl:pl-[150px]' : ''}   ${title ? '' : 'lg:py-14 md:py-6'} ${classNameDivContent}`}>
+      <div className={` lg:basis-1/2  ${isReverse? 'md:basis-[57%]' : 'md:basis-[65%]'} ${isReverse ?' 2xl:pl-[150px] lg:pl-[50px]' : ''}   ${title ? '' : 'lg:py-14 md:py-6'} ${classNameDivContent}`}>
         {title &&<h1 className={`mb-10 text-gray-01 ml-5 md:ml-0 ${isReverse ? 'lg:pt-20' : ''}    title`}>{title}</h1>}
         <SubTitleAndNumberProps 
           classNameDivSubTitle={classNameDivSubTitle} 
